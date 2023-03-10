@@ -7,13 +7,13 @@
     <title>Document</title>
     <style>
         *{padding: 0px; margin: 0px auto;}
-        .wrapper{height: 700px; width: 1000px; background-color: antiquewhite;}
+        .wrapper{height: 700px; width: 100%; background-color: rgb(183, 233, 215);}
         header{
-            height: 120px; width: 1000px; background-color: #294e79; position: absolute;
+            height: 120px; width: 100%; background-color: #294e79; position: absolute;
         }
         header img{position: absolute; top: 20px; left: 15px;}
-        .p1{font-size: 30px; position: absolute; top: 30px; left: 120px; color: aliceblue;}
-        .p2{font-size: 12px; position: absolute; top: 70px; left: 120px; color: aliceblue;}
+        .p1{font-size: 50px; position: absolute; top: 20px; left: 120px; color: aliceblue;}
+        .p2{font-size: 25px; position: absolute; top: 70px; left: 120px; color: aliceblue;}
         #from1{top: 10px; right: 10px; position: absolute;}
         .top-menu li
         {
@@ -28,28 +28,35 @@
             border: 1px solid green; 
         }
         li a{ color: whitesmoke; text-decoration: none; font-weight: bolder;}
-        .top-menu li:hover{background-color: blue;}
+        .top-menu li:hover{background-color: blue; }
         li:hover>a{color: yellow; font-style: italic;}
-        .top-menu li:last-child{right: 10px; width: 80px;}
-        .top-menu li:nth-child(4){right: 100px; width: 140px;}
-        .top-menu li:nth-child(3){right: 250px;}
-        .top-menu li:nth-child(2){right: 380px; width: 100px;}
-        .top-menu li:nth-child(1){right: 490px; width: 80px;}
-        .content{
-            display: flex;
-            background-color: chocolate;
+        .top-menu li:last-child{right: 10px; width: 160px;}
+        .top-menu li:nth-child(4){right: 180px; width: 220px;}
+        .top-menu li:nth-child(3){right: 410px; width: 160px;}
+        .top-menu li:nth-child(2){right: 580px; width: 160px;}
+        .top-menu li:nth-child(1){right: 750px; width: 160px;}
+        .content {
+            width: 580px;
+            height: 300px;
+            background: #e7e7e7;
+            border: 1px solid #000;
+            float: left;
+            margin-bottom: 10px;
         }
-        .cot{
-            height: 860px; width: 890px;
+        .box{
+            top: 120px; height: 120px; width: 100px;
         }
-        #id1{
-            background-color: white; float: left;
+        #box1{
+            background-color: aqua; top: 300px; 
         }
-        #id2{
-            background-color: white; float: center;
+        #box2{
+            background-color: orange;
         }
-        #id3{
-            background-color: white; float: right;
+        #box3{
+            background-color: deeppink;
+        }
+        footer{
+            font-size: 18px; color:white; height 100px; width: 100%; background-color: #294e79 ;float: left; bottom: 50px; position: absolute;
         }
     </style>
 </head>
@@ -75,13 +82,13 @@
                 <li><a href="">About</a></li>
             </ul>
         </header>
-        <div class="content">
-            <div id="id1" class="cot">1</div>
-<div id="id2" class="cot">2</div>
-            <div id="id3" class="cot">3</div>
+        <div id="content">
+            <div id="box1" class="box">cot 1</div>
+            <div id="box2" class="box">cot 2</div>
+            <div id="box3" class="box">cot 3</div>
         </div>
         <footer>
-
+            <p>Copyright &#169 2017 - All Rights Reserved - Software Engineering Department - Industrial University of Ho Chi Minh City</p>
         </footer>
     </div>
 </body>
