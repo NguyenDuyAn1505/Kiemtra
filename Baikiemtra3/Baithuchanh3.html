@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0px; margin: 0px auto;}
+        .wrapper{height: 700px; width: 1000px; background-color: antiquewhite;}
+        header{
+            height: 120px; width: 1000px; background-color: #294e79; position: absolute;
+        }
+        header img{position: absolute; top: 20px; left: 15px;}
+        .p1{font-size: 30px; position: absolute; top: 30px; left: 120px; color: aliceblue;}
+        .p2{font-size: 12px; position: absolute; top: 70px; left: 120px; color: aliceblue;}
+        #from1{top: 10px; right: 10px; position: absolute;}
+        .top-menu li
+        {
+            height: 45px; width: 120px;
+            background-color: #4788d1;
+            float: left;
+            position: absolute;
+            list-style: none;
+            text-indent: 20px;
+            line-height: 45px;
+            bottom: 0px;
+            border: 1px solid green; 
+        }
+        li a{ color: whitesmoke; text-decoration: none; font-weight: bolder;}
+        .top-menu li:hover{background-color: blue;}
+        li:hover>a{color: yellow; font-style: italic;}
+        .top-menu li:last-child{right: 10px; width: 80px;}
+        .top-menu li:nth-child(4){right: 100px; width: 140px;}
+        .top-menu li:nth-child(3){right: 250px;}
+        .top-menu li:nth-child(2){right: 380px; width: 100px;}
+        .top-menu li:nth-child(1){right: 490px; width: 80px;}
+        .content{
+            display: flex;
+            background-color: chocolate;
+        }
+        .cot{
+            height: 860px; width: 890px;
+        }
+        #id1{
+            background-color: white; float: left;
+        }
+        #id2{
+            background-color: white; float: center;
+        }
+        #id3{
+            background-color: white; float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="../img/Anh.png" alt="" srcset="" height="80" width="80">
+            <p class="p1">
+                FlowerBox 360
+            </p>
+            <p class="p2">
+                ...to get your daily dose of luxury roses!
+            </p>
+            <form action="" method="get" id="from1">
+                <input type="text" name="txtName" id="txtName" placeholder="Search the site">
+                <button type="submit">GO</button>
+            </form>
+            <ul class="top-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Promotion</a></li>
+                <li><a href="">Gift Baskets</a></li>
+                <li><a href="">Flower Services</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div id="id1" class="cot">1</div>
+<div id="id2" class="cot">2</div>
+            <div id="id3" class="cot">3</div>
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
