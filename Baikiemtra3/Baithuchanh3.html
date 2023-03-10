@@ -35,25 +35,27 @@
         .top-menu li:nth-child(3){right: 410px; width: 160px;}
         .top-menu li:nth-child(2){right: 580px; width: 160px;}
         .top-menu li:nth-child(1){right: 750px; width: 160px;}
-        #content{
-            display: flex;
-            position: relative;
+        .cot{
+            height: 120px; width: 100px;
         }
-        .box{
-            top: 120px; height: 120px; width: 100px; margin-top: 120px;
-        }
-        #box1{
+        #cot1{
             background-color: aqua;  
         }
-        #box2{
+        #cot2{
             background-color: orange;
         }
-        #box3{
+        #cot3{
             background-color: deeppink;
         }
+        .column { float: left;  padding: 10px;}
+        .column.side1 {  width: 40%;}
+        .column.side2 {  width: 30%;}
+        .column.middle {  width: 25%;}
+        .row:after {  content: "";  display: table;  clear: both;}
         footer{
             font-size: 18px; color:white; height 100px; width: 100%; background-color: #294e79 ;float: left; bottom: 0px; position: absolute;
         }
+        
     </style>
 </head>
 <body>
@@ -78,11 +80,34 @@
                 <li><a href="">About</a></li>
             </ul>
         </header>
-        <div id="content">
-            <div id="box1" class="box">cot 1</div>
-            <div id="box2" class="box">cot 2</div>
-            <div id="box3" class="box">cot 3</div>
         </div>
+        <div id="cot">  
+            <div id="cot1" class="column side1">    
+            <h2>Hướng dẫn</h2>      
+            <p>
+                Bạn có thể chia sẻ bài viết của mình trên trang nếu có tài khoản, bạn       
+               có thể xem bài viết đã đăng, xem bài viết của các thành viên khác và tìm       
+               kiếm bài viết mình quan tâm trên trang.</p>  
+            </div>  
+            <div id="cot2" class="column middle">    
+            <h2>Giới thiệu</h2>      
+            <p>
+                Quantrimang.com là mạng xã hội về khoa học công nghệ, mở rộng nội dung      
+               để đáp ứng nhu cầu của các thành viên về nhiều lĩnh vực công nghệ hơn như      
+               điện thoại, thiết bị thông minh, điện tử, bảo mật máy tính...
+            </p>      
+            <p>
+                Bạn có thể trở thành một phần của Quantrimang.com bằng cách gửi bài      
+               viết, trải nghiệm công nghệ của mình về cho đội ngũ quản lý nội dung của       
+               mạng xã hội thông qua địa chỉ email info@meta.vn</p>  
+            </div>  
+            <div id="cot3" class="column side2">    
+                <h2>Liên hệ</h2>      
+                <p>Địa chỉ: 56 Duy Tân, Dịch Vọng Hậu, Cầu Giấy, Hà Nội 12312 312 312 312 3123123.</p>      
+                <p>Điện thoại: 024 2242 6188. 1231231 312312 123 123</p>      
+                <p>Email: info@meta.vn.</p>  
+            </div>
+    </div>
         <footer>
             <p>Copyright &#169 2017 - All Rights Reserved - Software Engineering Department - Industrial University of Ho Chi Minh City</p>
         </footer>
